@@ -22,11 +22,15 @@ function App() {
             </Nav>
           </Container>
         </Navbar>
-
+        {/* <header>
+          <h1> ABC COMPANY</h1>
+          <nav>
+            <Link to="/"> Login</Link>
+          </nav>
+        </header> */}
         <Container className='pt-5'>
         <Routes>
           <Route index element={<Login />} />
-          <Route path="/React_Fe_Be_app" element={<Login />} />
           <Route path='usersdata' element={<UserList />} />
           <Route path='usersdata/:userNo' element={<Particular />} />
         </Routes>
